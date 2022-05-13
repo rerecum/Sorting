@@ -15,14 +15,19 @@ using System.Windows.Shapes;
 
 namespace sortowanieOCENA
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+
     public partial class MainWindow : Window
     {
+        string text = System.IO.File.ReadAllText(@"C:\filepath\file.txt");
+
+        string[] lines = System.IO.File.ReadAllLines(@"C:\filepath\file.txt");
         public MainWindow()
         {
             InitializeComponent();
+        }
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

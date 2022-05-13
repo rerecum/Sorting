@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:sortowanieOCENA"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
         <Button x:Name="brute_force" Content="BRUTE FORCE" HorizontalAlignment="Left" Margin="16,34,0,0" VerticalAlignment="Top" Background="#FFCE6464" Width="90"/>
         <Button x:Name="KMP" Content="KMP" HorizontalAlignment="Left" Margin="111,34,0,0" VerticalAlignment="Top" Background="#FFCE6464" Width="77"/>
@@ -37,6 +37,7 @@
         <TextBox x:Name="whattextbox_Copy" HorizontalAlignment="Left" Margin="173,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="SERomanc" Height="25"/>
         <TextBox x:Name="whattextbox_Copy1" HorizontalAlignment="Left" Margin="173,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="SERomanc" Height="25"/>
         <TextBox x:Name="whattextbox_Copy2" HorizontalAlignment="Left" Margin="173,227,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="SERomanc" Height="25"/>
+        <DataGrid Name="dtGridView" Margin="342,89,48,44"/>
 
     </Grid>
 </Window>
