@@ -29,25 +29,21 @@ namespace sortowanieOCENA
         {
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.ShowDialog();
-            ofd.FileName = @"Documenten";
 
             tekst tekstInfo = new tekst();
-            string[] tekstArray;
+            string tekstArray;
+            
 
             DataTable dt = new DataTable();
             dt.Columns.Add("Last Name", typeof(string));
-            dt.Columns.Add("First Name", typeof(string));
-            dt.Columns.Add("Subject", typeof(string));
 
             using(StreamReader sr=new StreamReader(ofd.FileName))
             {
                 while(!sr.EndOfStream)
                 {
-                    tekstArray = sr.ReadLine().Split(";");
+                    tekstArray = sr.ReadLine();
 
-                    tekstInfo.LastName = tekstArray[0];
-                    tekstInfo.FirstName = tekstArray[1];
-                    tekstInfo.Subject = tekstArray[2];
+                    tekstInfo.LastName = tekstArray;
 
                     dt.Rows.Add(tekstArray);
 
