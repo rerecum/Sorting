@@ -1,0 +1,35 @@
+﻿<Window x:Class="sortowanieOCENA.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:sortowanieOCENA"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="brute_force" Content="BRUTE FORCE" HorizontalAlignment="Left" Margin="16,34,0,0" VerticalAlignment="Top" Background="#FFCE6464" Width="90"/>
+        <Button x:Name="KMP" Content="KMP" HorizontalAlignment="Left" Margin="111,34,0,0" VerticalAlignment="Top" Background="#FFCE6464" Width="77"/>
+        <Button x:Name="Boyer" Content="BOYER MOORE" HorizontalAlignment="Left" Margin="193,34,0,0" VerticalAlignment="Top" Background="#FFCE6464" Width="100"/>
+        <Button x:Name="Rabin" Content="RABIN KARP" HorizontalAlignment="Left" Margin="298,34,0,0" VerticalAlignment="Top" Background="#FFCE6464" RenderTransformOrigin="0.5,0.5" Width="87">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.523"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="wykonaj" Content="WYKONAJ" HorizontalAlignment="Left" Margin="16,367,0,0" VerticalAlignment="Top" Background="#FF9BFF8D" FontFamily="Source Sans Pro Black" Width="104" Height="40"/>
+        <Label x:Name="tytul" Content="Przeszukiwanie tekstu z pliku" HorizontalAlignment="Left" Margin="89,0,0,0" VerticalAlignment="Top" Background="Transparent" FontFamily="Tempus Sans ITC" FontSize="16"/>
+        <Label x:Name="what" Content="Co chcesz znaleźć?" HorizontalAlignment="Left" Margin="16,84,0,0" VerticalAlignment="Top" FontFamily="Source Serif Pro Black" FontSize="16"/>
+        <TextBox x:Name="whattextbox" HorizontalAlignment="Left" Margin="173,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="SERomanc" Height="25"/>
+        <Label x:Name="what_Copy" Content="Czy znalazło?" HorizontalAlignment="Left" Margin="16,131,0,0" VerticalAlignment="Top" FontFamily="Source Serif Pro Black" FontSize="16"/>
+        <Label x:Name="what_Copy1" Content="Ile razy znalazło?" HorizontalAlignment="Left" Margin="16,176,0,0" VerticalAlignment="Top" FontFamily="Source Serif Pro Black" FontSize="16"/>
+        <Label x:Name="what_Copy2" Content="Ile zajęło znalezienie?" HorizontalAlignment="Left" Margin="16,225,0,0" VerticalAlignment="Top" FontFamily="Source Serif Pro Black" FontSize="14"/>
+        <TextBox x:Name="whattextbox_Copy" HorizontalAlignment="Left" Margin="173,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="SERomanc" Height="25"/>
+        <TextBox x:Name="whattextbox_Copy1" HorizontalAlignment="Left" Margin="173,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="SERomanc" Height="25"/>
+        <TextBox x:Name="whattextbox_Copy2" HorizontalAlignment="Left" Margin="173,227,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="SERomanc" Height="25"/>
+
+    </Grid>
+</Window>
