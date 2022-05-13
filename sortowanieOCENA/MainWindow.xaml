@@ -20,7 +20,14 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button x:Name="wykonaj" Content="WYKONAJ" HorizontalAlignment="Left" Margin="16,367,0,0" VerticalAlignment="Top" Background="#FF9BFF8D" FontFamily="Source Sans Pro Black" Width="104" Height="40"/>
+        <Button x:Name="wykonaj" Content="WYKONAJ" HorizontalAlignment="Left" Margin="16,367,0,0" VerticalAlignment="Top" FontFamily="Source Sans Pro Black" Width="104" Height="40">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF35FF2F" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
         <Label x:Name="tytul" Content="Przeszukiwanie tekstu z pliku" HorizontalAlignment="Left" Margin="89,0,0,0" VerticalAlignment="Top" Background="Transparent" FontFamily="Tempus Sans ITC" FontSize="16"/>
         <Label x:Name="what" Content="Co chcesz znaleźć?" HorizontalAlignment="Left" Margin="16,84,0,0" VerticalAlignment="Top" FontFamily="Source Serif Pro Black" FontSize="16"/>
         <TextBox x:Name="whattextbox" HorizontalAlignment="Left" Margin="173,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="SERomanc" Height="25"/>
